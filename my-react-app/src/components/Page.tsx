@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 //import Box from '@mui/material/Box';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
-
+import Page2 from './Page2';
 
 interface props {
   id: number;
@@ -38,8 +38,10 @@ const Page: React.FC = () => {
   ];
 
   return (
-    <div style={{ height: 600, width: '100%' }}>
+    <div style={{ height: 400, width: '100%' }}>
       <DataGrid rows={data} columns={columns} pageSize={5} checkboxSelection />
+     <br/> 
+      <Page2/>
     </div>
   );
 
